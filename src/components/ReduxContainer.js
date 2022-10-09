@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import App2 from "../practice/App2";
 import buyCake from "../redux/cake/cakeActions";
 
 const ReduxContainer = (props) => {
@@ -7,6 +8,7 @@ const ReduxContainer = (props) => {
         <div>
             <h2>Number of Cakes - {props.noOfCakes}</h2>
             <button onClick={props.buyCake}>Buy Cake</button>
+            <App2/>
         </div>
     )
 }
