@@ -5,12 +5,13 @@ import store from './redux/store';
 import { HooksReduxContainer } from './components/HooksReduxContainer';
 import IceCreamReduxContainer from './components/IceCreamReduxContainer';
 import FantaReduxContainer from './components/FantaReduxContainer';
+import NewReduxContainer from './components/NewReduxContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <ReduxContainer />
+        <NewReduxContainer />
         <HooksReduxContainer />
         <IceCreamReduxContainer />
         <FantaReduxContainer />
